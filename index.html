@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light only" />
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon" />
+
+    <script src="https://kit.fontawesome.com/75ffc039d1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <title>Portfolio Viktor L.</title>
+</head>
+
+<body>
+    <!--=============== HEADER PROFILE ===============-->
+    <header class="profile container">
+        <!-- Botón tema oscuro -->
+        <i class="ri-moon-line change-theme noSelect" id="theme-button"></i>
+
+        <div class="profile__container grid">
+            <div class="profile__data" data-aos="fade-up" data-aos-duration="800">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <img src="/assets/img/perfil.webp" alt="Foto de perfil" />
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Viktor L.</h2>
+                <h3 class="profile__profession">
+                    Desarrollador De Aplicaciones Web
+                </h3>
+
+                <ul class="profile__social">
+                    <a href="https://github.com/viktorlacharo" class="profile__social-link" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/viktor-lazarenko-281359157/" target="_blank"
+                        class="profile__social-link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:viktorgym1999@gmail.com" target="_blank" class="profile__social-link"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </ul>
+            </div>
+
+            <div class="profile__info flex" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">1.5</h3>
+                    <p class="profile__info-description">
+                        Años de experiencia
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">2</h3>
+                    <p class="profile__info-description">
+                        Proyectos públicos
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+10</h3>
+                    <p class="profile__info-description">
+                        Proyectos privados
+                    </p>
+                </div>
+            </div>
+
+            <section class="personal__information container">
+                <div class="personal__title">
+                    <h3 class="title__name" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                        Hola, soy Viktor 👋
+                    </h3>
+                </div>
+                <div class="personal__subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                    <h3 class="subtitle__name">
+                        Desarrollador en formación
+                    </h3>
+                </div>
+                <div class="personal__description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="900">
+                    <p class="personal__content">
+                        Siempre me ha fascinado el mundo de la programación,
+                        a pesar de que hace poco que me dedico a ello.
+                        <br />
+                        <br />
+                        Soy estudiante de DAW, y aparte, me dedico a
+                        formarme de manera autodidacta, hoy en día, en el
+                        desarrollo web. No he trabajado nunca en una empresa
+                        dedicada al sector, pero busco una oportunidad para
+                        formarme en el campo, aprendo rápido, y considero
+                        que puedo aportar.
+                        <br />
+                        <br />
+                        Estoy tratando de especializarme en back-end. Me
+                        gusta mucho el tema de las conexiones con bases,
+                        API, rutas, etc. Aunque, el front-end también lo
+                        disfruto, pero me cuesta más, no tengo una mente muy
+                        creativa (o carezco de experiencia necesaria)
+                        <br />
+                        <br />
+                        Mi lenguaje favorito, es Python. A pesar de con lo
+                        que más siento que he trabajado es con JS.
+
+                        <br />
+                        <br />
+                        Cuando creo proyectos, pierdo la noción del tiempo,
+                        dado que disfruto mucho de crear, y experimentar con
+                        cosas que no sabía que podía hacer.
+                    </p>
+                </div>
+            </section>
+
+            <div class="profile__buttons flex" data-aos="fade-up" data-aos-duration="800">
+                <a download="" href="/assets/pdf/Curriculum_Lazarenko_Viktor.pdf" class="button">Descargar CV <i
+                        class="fa-solid fa-download"></i></a>
+                <a download="" href="/assets/pdf/Carta_Presentacion_Viktor_Lazarenko.pdf" class="button">Carta
+                    Presentación <i class="fa-solid fa-download"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="filters container">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="filters__content" data-aos="fade-up" data-aos-duration="800">
+                <button class="filters__button filter-tab-active noSelect" data-target="#projects">
+                    Proyectos
+                </button>
+
+                <button class="filters__button noSelect" data-target="#skills">
+                    Aptitudes
+                </button>
+
+                <button class="filters__button noSelect" data-target="#future_projects">
+                    Futuros Proyectos
+                </button>
+            </ul>
+
+            <div class="filters__sections">
+                <!--=============== PROJECTS ===============-->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <!-- PROYECTO DE SHARE ME -->
+                    <div class="project__article" data-aos="fade-up" data-aos-duration="800">
+                        <article class="projects__card">
+                            <img src="/assets/img/project5.webp" alt="ShareMe" class="projects__img" />
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">
+                                        ShareMe
+                                    </h3>
+
+                                    <a href="https://sharemeviktorlacharo.netlify.app/" target="_blank"
+                                        class="projects__button button"><i class="fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="project__description container grid">
+                            <em class="projects__title__description">Descripción</em>
+                            <p class="projects__description">
+                                Una copia, barata, de <a href="https://pinterest.es" target="_blank">Pinterest</a> .
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-react"></i>
+                                    <a href="https://es.reactjs.org" target="_blank">React.js</a>, para la creación de
+                                    todos los
+                                    componentes, y la maquetación de la
+                                    misma.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-play" style="transform: rotateZ(90deg)"></i>
+                                    <a href="https://vitejs.dev" target="_blank">Vite</a>, uno de los servidores de
+                                    desarrollo
+                                    más potentes, y que más carrerilla está
+                                    cogiendo actualmente.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-wind"></i>
+                                    <a href="https://animejs.com" target="_blank">Tailwind CSS</a>
+                                    para darle estilo a toda la pagina de
+                                    manera extremadamente orgánica gracias a
+                                    las funciones de React.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-s"></i>
+                                    <a href="https://www.sanity.io/?adgroupid=138559557526&adid=615140663744&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEF1QOlLxRVM2F_gxgb4JRFq0gYp9iLjb-k9k4yJ6jNX7r95F0aHkEAaAguaEALw_wcB"
+                                        target="_blank">Sanity</a>
+                                    es la plataforma de contenido estructurado que permite la creación de
+                                    documentos, llamadas estructuras de datos, que permiten el almacenamiento de
+                                    datatype, dentro de nuestra pagina. <br> Lo he sentido como una mezcla entre CSM y
+                                    una BBDD.
+                                </li>
+                            </ul>
+                            <p>
+                                Una aplicación que me ha instruido en funcionalidades, de lo más relevantes en la web.
+                                Como puede ser el fetching de datos, subida de contenido, librerías, y documentos de
+                                Sanity, entre otros.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Verdad o Reto -->
+
+                    <div class="project__article" data-aos="fade-up" data-aos-duration="800">
+                        <article class="projects__card">
+                            <img src="/assets/img/project1.webp" alt="Verdad o Reto" class="projects__img" />
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">
+                                        Verdad O Reto
+                                    </h3>
+
+                                    <a href="http://www.verdadoretoparatodos.es" target="_blank"
+                                        class="projects__button button"><i class="fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="project__description container grid">
+                            <em class="projects__title__description">Descripción</em>
+                            <p class="projects__description">
+                                Empezó como un proyecto de práctica para
+                                aprender JavaScript, porque todas las
+                                aplicaciones de este estilo, o eran de pago,
+                                o me disgustaba su contenido. Proyecto donde
+                                se ha usado:
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-python"></i>
+                                    Flask, para pequeñas necesidades del
+                                    back.
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-square-js"></i>
+                                    Vanilla Js, para manipulación del DOM,
+                                    local y sessionStorage, cookies, etc.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-code"></i>
+                                    <a href="https://animejs.com" target="_blank">Anime.js</a>
+                                    para darle ciertas animaciones a la
+                                    página.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-code"></i> Al
+                                    final se usó JQuery, para algunas tareas
+                                    específicas.
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-html5"></i> Jinja
+                                    para las plantillas HTML.
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    CSS, sin frameworks.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-code"></i>
+                                    JSON, para proporcionar datos a la
+                                    página.
+                                </li>
+                            </ul>
+                            <p>
+                                Con este proyecto senté unas buenas bases
+                                del funcionamiento de JS, y algunos términos
+                                de back. Al igual que aprendí optimización
+                                de SEO, y del rendimiento de páginas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Lyriks-RapidAPI -->
+
+                    <div class="project__article" data-aos="fade-up" data-aos-duration="800">
+                        <article class="projects__card">
+                            <img src="/assets/img/project4.webp" alt="Lyriks" class="projects__img" />
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Lyriks</h3>
+
+                                    <a href="https://viktorlacharo-lyriks.netlify.app" target="_blank"
+                                        class="projects__button button"><i class="fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="project__description container grid">
+                            <em class="projects__title__description">Descripción</em>
+                            <p class="projects__description">
+                                Un clon, barato, de Spotify, abriéndome las
+                                puertas al mundo de las API's, con RapidAPI,
+                                el control de estado con Redux, y estructura
+                                con los componentes de React.
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-react"></i>
+                                    <a href="https://es.reactjs.org" target="_blank">React.js</a>, para la creación de
+                                    todos los
+                                    componentes, y la maquetación de la
+                                    misma.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-play" style="transform: rotateZ(90deg)"></i>
+                                    <a href="https://vitejs.dev" target="_blank">Vite</a>, uno de los servidores de
+                                    desarrollo
+                                    más potentes, y que más carrerilla está
+                                    cogiendo actualmente.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-wind"></i>
+                                    <a href="https://animejs.com" target="_blank">Tailwind CSS</a>
+                                    para darle estilo a toda la pagina de
+                                    manera extremadamente orgánica gracias a
+                                    las funciones de React.
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-octopus-deploy"></i>
+                                    <a href="https://rapidapi.com/hub" target="_blank">RapidAPI</a>, para obtener las
+                                    canciones, y usarlas
+                                    según la conveniencia del usuario.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-atom"></i>
+                                    <a href="https://es.redux.js.org" target="_blank">Redux</a>
+                                    , para darle un comportamiento consiente
+                                    a la aplicación.
+                                </li>
+                            </ul>
+                            <p>
+                                Aplicación interesante desde el punto de
+                                vista de un estudiante, entrando en
+                                conceptos importantes, como el fetching,
+                                endpoints, el control de estado, etc.
+                                <br /><br />
+                                <em>Es una lástima que la página quede
+                                    limitada por el plan de RapidAPI. Solo
+                                    se admiten 500 requests mensuales, por
+                                    lo que dependiendo de cuando vea esto,
+                                    quizá la aplicación no es funcional.
+                                </em>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto App Banco Moderno -->
+
+                    <div class="project__article" data-aos="fade-up" data-aos-duration="800">
+                        <article class="projects__card">
+                            <img src="/assets/img/project3.webp" alt="Verdad o Reto" class="projects__img" />
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">
+                                        Modern Bank
+                                    </h3>
+
+                                    <a href="https://viktorlacharo.github.io/react-bank-app-viktor" target="_blank"
+                                        class="projects__button button"><i class="fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="project__description container grid">
+                            <em class="projects__title__description">Descripción</em>
+                            <p class="projects__description">
+                                Un proyecto de practica para adentrarme en
+                                el mundo de
+                                <a href="https://es.reactjs.org" target="_blank">React.js</a>, que consiste en la
+                                maquetación y diseño.
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-react"></i>
+                                    <a href="https://es.reactjs.org" target="_blank">React.js</a>, para la creación de
+                                    todos los
+                                    componentes, y la maquetación de la
+                                    misma.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-play" style="transform: rotateZ(90deg)"></i>
+                                    <a href="https://vitejs.dev" target="_blank">Vite</a>, uno de los servidores de
+                                    desarrollo
+                                    más potentes, y que más carrerilla está
+                                    cogiendo actualmente.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-wind"></i>
+                                    <a href="https://animejs.com" target="_blank">Tailwind CSS</a>
+                                    para darle estilo a toda la pagina de
+                                    manera extremadamente orgánica gracias a
+                                    las funciones de React.
+                                </li>
+                            </ul>
+                            <p>
+                                Un proyecto que he disfrutado especialmente.
+                                Me han gusto mucho los frameworks y
+                                librerías. Considero que la página ha
+                                quedado elegante, y futurista.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Portfolio -->
+                    <div class="project__article" data-aos="fade-up" data-aos-duration="800">
+                        <article class="projects__card">
+                            <img src="/assets/img/project2.webp" alt="Portfolio" class="projects__img" />
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">
+                                        Portfolio
+                                    </h3>
+
+                                    <a href="#" target="_blank" class="projects__button button"><i
+                                            class="fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="project__description container grid">
+                            <em class="projects__title__description">Descripción</em>
+                            <p class="projects__description">
+                                He decidido incluir este proyecto mismo,
+                                como proyecto, dado que, a pesar de ser
+                                pequeño, he aprendido.
+                                <br />
+                                Es un proyecto inspirado en la estética de
+                                <a href="https://github.com/bedimcode" target="_blank"
+                                    rel="noopener noreferrer">Bedimcode</a>, del que he aprendido nuevos conceptos con
+                                los lenguajes que se han usado:
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-html5"></i> Para
+                                    la maquetación.
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    CSS.
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-square-js"></i>
+                                    JS, para el tema oscuro, y las tablas de
+                                    contenido.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ======================== Futuros Proyectos ======================== -->
+                </div>
+                <!--=============== SKILLS ===============-->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Desarrollador Frontend
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Intermedio-Avanzado</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            JavaScript
+                                        </h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            Vite.js
+                                        </h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">Formación</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            Bootstrap
+                                        </h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            Tailwind
+                                        </h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Desarrollador Backend</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            JavaScript
+                                        </h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Flask</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Django</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            SpringBoot
+                                        </h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__level">Básico-Intermedio</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-circle-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            Node.js
+                                        </h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============FUTURE PROJECTS================ -->
+                <div class="future_projects container grid" data-content id="future_projects">
+                    <h3 class="trajectory__title">
+                        <i class="fa-solid fa-code"></i>
+                        Trayectoria
+                    </h3>
+                    <p>
+                        En esta sección no solo dejaré ideas de proyectos
+                        concretos, más bien serán planes de futuro, para
+                        dejar constancia para mi mismo, a modo de
+                        organigrama.
+                    </p>
+
+                    <article class="future__projects__content">
+                        <div class="future_projects__title">
+                            <i class="fa-brands fa-react"></i>
+                            <h3 class="article__title">React</h3>
+                        </div>
+                        <div class="article__subtitle">Front</div>
+                        <div class="article__content">
+                            <p>
+                                Después del Verdad o Reto, y este Portfolio,
+                                lo siguiente que me he propuesto, es
+                                aprender, o como mínimo, sentar unas bases
+                                con React. Es un framework que me llama
+                                mucho la atención, y lo poco que he hecho,
+                                me ha gustado, para ciertos proyectos que
+                                voy a comentar a continuación.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="future__projects__content">
+                        <div class="future_projects__title">
+                            <i class="fa-solid fa-shop"></i>
+                            <h3 class="article__title">E-Commerce</h3>
+                        </div>
+                        <div class="article__subtitle">Front/Back</div>
+                        <div class="article__content">
+                            <p>
+                                Un proyecto de práctica, cuyo objetivo, está
+                                destinado a sentar bases en back, y front.
+                                Mi idea es hacer un E-Commerce, o una
+                                plantilla para ello, pero había pensado, en
+                                hacer una página de venta de cuadros, fotos,
+                                y otros artículos. Mi idea es hacerlo con
+                                Flask, o Django, queda por decidir, y React,
+                                para poder practicar con estos frameworks, y
+                                adquirir experiencia con ellos.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="future__projects__content">
+                        <div class="future_projects__title">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h3 class="article__title">Keylogger</h3>
+                        </div>
+                        <div class="article__subtitle">Algorithms</div>
+                        <div class="article__content">
+                            <p>
+                                Es un pequeño proyecto, que me apetece
+                                hacer, que no tiene ninguna utilidad
+                                aparente, pero me servirá de cara a futuro.
+                                Mi idea es hacer un keylogger, en Python,
+                                introduciéndome en el mundo de los
+                                algoritmos, cosa que me fascina.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="future__projects__content">
+                        <div class="future_projects__title">
+                            <i class="fa-solid fa-question"></i>
+                            <h3 class="article__title">Proyecto DRT</h3>
+                        </div>
+                        <div class="article__subtitle">Front/Back</div>
+                        <div class="article__content">
+                            <p>
+                                No puedo dar muchos detalles porque no lo se
+                                ni yo, todavía. Consiste en un proyecto,
+                                donde se intercambiara un servicio en web.
+                                No quiero dar muchos detalles. Las siglas de
+                                este proyecto son (<em>D</em>jango,
+                                <em>R</em>eact, <em>T</em>emplate)
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="future__projects__content">
+                        <div class="future_projects__title">
+                            <i class="fa-solid fa-heart"></i>
+                            <h3 class="article__title">Verdad o Reto</h3>
+                        </div>
+                        <div class="article__subtitle">Front/Back</div>
+                        <div class="article__content">
+                            <p>
+                                Proyecto subido, pero no acabado. Me
+                                quedaron muchas ideas en el tintero, y
+                                considero que se puede hacer de una manera
+                                mejor. Puedo considerar en aportar mejoras
+                                dentro de la página. En vista que ha sido mi
+                                primer proyecto, habría muchas cosas que
+                                haría muy distinto.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="future__projects__content">
+                        <div class="future_projects__title">
+                            <i class="fa-solid fa-robot"></i>
+                            <h3 class="article__title">IA</h3>
+                        </div>
+                        <div class="article__subtitle">
+                            Inteligencia Artificial
+                        </div>
+                        <div class="article__content">
+                            <p>
+                                Más que un proyecto, es un sueño. Al acabar
+                                el grado, me quiero dedicar al desarrollo de
+                                IA, y de paso al análisis de datos, ya que
+                                me inicié en la programación, por ello, en
+                                parte.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <div class="footer__credits">
+            <h3 class="footer__author">Viktor L.</h3>
+        </div>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
